@@ -1,1 +1,71 @@
-gggggggggggggg
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo di Immissione Dati</title>
+</head>
+<body>
+    <h1>Modulo di Immissione Dati</h1>
+    <form action="#" method="post">
+        <!-- Cognome e Nome -->
+        <label for="nome">Cognome e Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <!-- Commenti -->
+        <label for="commenti">Commenti:</label><br>
+        <textarea id="commenti" name="commenti" rows="4" cols="40"></textarea><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <!-- Patente (tipo veicolo) -->
+        <label>Patente:</label><br>
+        <input type="radio" id="veicoli" name="tipo_patente" value="veicoli">
+        <label for="veicoli">Veicoli motore</label><br>
+        <input type="radio" id="imbarcazioni" name="tipo_patente" value="imbarcazioni">
+        <label for="imbarcazioni">Imbarcazioni</label><br>
+        <input type="radio" id="altro" name="tipo_patente" value="altro">
+        <label for="altro">Altro</label>
+        <input type="text" id="specifica_altro" name="specifica_altro" placeholder="Specificare"><br><br>
+
+        <!-- Patente (tipo specifico) -->
+        <label>Patente:</label><br>
+        <input type="checkbox" id="tipoA" name="patente[]" value="tipoA">
+        <label for="tipoA">Tipo A</label><br>
+        <input type="checkbox" id="tipoB" name="patente[]" value="tipoB">
+        <label for="tipoB">Tipo B</label><br>
+        <input type="checkbox" id="tipoC" name="patente[]" value="tipoC">
+        <label for="tipoC">Tipo C</label><br>
+        <input type="checkbox" id="tipoD" name="patente[]" value="tipoD">
+        <label for="tipoD">Tipo D</label><br><br>
+
+        <!-- Regione -->
+        <label for="regione">Regione:</label>
+        <select id="regione" name="regione">
+            <option value="basilicata">Basilicata</option>
+            <option value="sicilia">Sicilia</option>
+            <option value="lombardia">Lombardia</option>
+            <option value="toscana">Toscana</option>
+        </select><br><br>
+
+        <!-- Città -->
+        <label for="citta">Città:</label>
+        <select id="citta" name="citta" multiple>
+            <option value="agrigento">Agrigento</option>
+            <option value="alessandria">Alessandria</option>
+            <option value="ancona">Ancona</option>
+            <option value="andria">Andria</option>
+        </select><br><br>
+
+        <!-- Carica un file -->
+        <label for="file">Carica un file:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- Pulsanti -->
+        <button type="submit">Invia query</button>
+        <button type="reset">Reimposta</button>
+    </form>
+</body>
+</html>
